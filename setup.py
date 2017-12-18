@@ -19,8 +19,9 @@ setup(
     install_requires=[
         'sb-vision',
         'pyudev',
+        'pathlib',
         'pyserial',
-        "cffi>=1.4.0",
+        'cffi>=1.4.0',
         'setproctitle',
     ],
     entry_points={
