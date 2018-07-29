@@ -450,7 +450,7 @@ class ServoAssembly(Board):
         results = self._command('analogue-read')
         for result in results:
             name, value = result.split(' ')
-            self._analogue_values.update({name: value})
+            self._analogue_values.update({name: float(value)})
 
     def _read_ultrasound(self, trigger_pin, echo_pin):
         found_values = []
